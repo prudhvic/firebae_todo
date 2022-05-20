@@ -1,0 +1,40 @@
+.form {
+  max-width: 400px;
+  margin: 4em auto;
+  display: grid;
+  gap: 1em;
+}
+.form_control {
+  display: grid;
+  gap: 0.5em;
+  color: rgb(168, 23, 216);
+}
+.form_control label span {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.form input {
+  padding: 0.3em 0.6em;
+  font-size: 1.1rem;
+  outline: none;
+  border-radius: 10px;
+  max-width: 100%;
+}
+.form input:focus {
+  border: 2px solid blueviolet;
+  outline: none;
+}
+.form button {
+  padding: 0.3em 0.6em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: rgba(95, 14, 201, 0.496);
+  color: rgba(251, 251, 251, 0.79);
+}
+.form button:hover {
+  background-color: rgb(97, 31, 159);
+  transition: 0.4s;
+}
+.active {
+  background-color: rgb(121, 12, 223);
+}

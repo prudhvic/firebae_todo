@@ -1,0 +1,112 @@
+.container {
+  padding: 1em;
+}
+
+.todos {
+  max-width: 600px;
+  display: grid;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.todos > div {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todos > div p {
+  flex: 1;
+}
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.form {
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.form button {
+  padding: 0.3em 0.6em;
+  font-size: 1.1rem;
+  background-color: rgb(24, 145, 15);
+  color: white;
+}
+.form button:hover {
+  background-color: white;
+  border: 2px solid rgb(24, 145, 15);
+  color: rgb(24, 145, 15);
+}
+.form input {
+  padding: 0.3em 0.6em;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+.form_s input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  display: block;
+  margin-right: 10px;
+}
+.form_s input:focus {
+  outline: none;
+}
+
+.todos button {
+  border: none;
+}
+.todos button:first-child {
+  background-color: rgba(190, 9, 18, 0.852);
+  color: rgb(229, 232, 236);
+}
+.todos button {
+  background-color: rgba(18, 144, 170, 0.852);
+  color: rgb(229, 232, 236);
+  font-weight: bold;
+}
+.todos button:first-child:hover {
+  background-color: white;
+  color: rgba(190, 9, 18, 0.852);
+  border: 1px solid rgba(190, 9, 18, 0.852);
+}
+.todos button:hover {
+  background-color: white;
+  color: rgba(18, 144, 170, 0.852);
+  border: 1px solid rgba(18, 144, 170, 0.852);
+}
+.flex p {
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 600px) {
+  .flex p {
+    flex: 2;
+  }
+  .flex p:nth-child(2) {
+    font-size: 0.8rem;
+    justify-self: end;
+  }
+  .todos > div {
+    flex-direction: column;
+    align-items: start;
+    max-width: 370px;
+    width: 300px;
+    gap: 1em;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .form {
+    margin: 2em auto;
+    justify-content: center;
+  }
+}

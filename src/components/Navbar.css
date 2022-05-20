@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 1em;
+  align-items: center;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.249);
+  font-style: italic;
+  color: #fff6e9f7;
+}
+nav ul {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+nav a,
+button {
+  color: rgb(2, 1, 1);
+  padding: 0.4em 0.8em;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: hsl(0, 2%, 79%);
+}
